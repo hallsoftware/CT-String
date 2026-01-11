@@ -1,0 +1,36 @@
+# Examples CMakeLists.txt
+
+# Basic examples
+add_executable(example_basic_usage ${CMAKE_CURRENT_SOURCE_DIR}/basic_usage.cpp)
+target_compile_features(example_basic_usage PRIVATE cxx_std_20)
+target_include_directories(example_basic_usage PRIVATE ${CMAKE_SOURCE_DIR}/include)
+
+add_executable(example_basic_string_manipulation ${CMAKE_CURRENT_SOURCE_DIR}/basic_string_manipulation.cpp)
+target_compile_features(example_basic_string_manipulation PRIVATE cxx_std_20)
+target_include_directories(example_basic_string_manipulation PRIVATE ${CMAKE_SOURCE_DIR}/include)
+
+add_executable(example_basic_path_manipulation ${CMAKE_CURRENT_SOURCE_DIR}/basic_path_manipulation.cpp)
+target_compile_features(example_basic_path_manipulation PRIVATE cxx_std_20)
+target_include_directories(example_basic_path_manipulation PRIVATE ${CMAKE_SOURCE_DIR}/include)
+
+add_executable(example_basic_hash_usage ${CMAKE_CURRENT_SOURCE_DIR}/basic_hash_usage.cpp)
+target_compile_features(example_basic_hash_usage PRIVATE cxx_std_20)
+target_include_directories(example_basic_hash_usage PRIVATE ${CMAKE_SOURCE_DIR}/include)
+
+# Simple examples
+add_executable(example_use_case_config_keys ${CMAKE_CURRENT_SOURCE_DIR}/use_case_config_keys.cpp)
+target_compile_features(example_use_case_config_keys PRIVATE cxx_std_20)
+target_include_directories(example_use_case_config_keys PRIVATE ${CMAKE_SOURCE_DIR}/include)
+
+# Intermediate examples
+add_executable(example_use_case_logger ${CMAKE_CURRENT_SOURCE_DIR}/use_case_logger.cpp)
+target_compile_features(example_use_case_logger PRIVATE cxx_std_20)
+target_include_directories(example_use_case_logger PRIVATE ${CMAKE_SOURCE_DIR}/include)
+
+add_executable(example_use_case_path_builder ${CMAKE_CURRENT_SOURCE_DIR}/use_case_path_builder.cpp)
+target_compile_features(example_use_case_path_builder PRIVATE cxx_std_20)
+target_include_directories(example_use_case_path_builder PRIVATE ${CMAKE_SOURCE_DIR}/include)
+
+add_executable(example_use_case_file_registry ${CMAKE_CURRENT_SOURCE_DIR}/use_case_file_registry.cpp)
+target_compile_features(example_use_case_file_registry PRIVATE cxx_std_20)
+target_include_directories(example_use_case_file_registry PRIVATE ${CMAKE_SOURCE_DIR}/include)
