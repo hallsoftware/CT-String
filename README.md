@@ -25,6 +25,7 @@ A header-only C++20 library for compile-time string manipulation, hashing, and t
 - [Building the Examples](#building-the-examples)
 - [Similar Libraries](#similar-libraries)
   - [Key Differences](#key-differences)
+- [TODO List](#todo-list)
 - [License](#license)
 - [Contributing](#contributing)
 
