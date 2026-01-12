@@ -18,6 +18,10 @@ target_compile_features(example_basic_hash_usage PRIVATE cxx_std_20)
 target_include_directories(example_basic_hash_usage PRIVATE ${CMAKE_SOURCE_DIR}/include)
 
 # Simple examples
+add_executable(example_use_case_compilation_info ${CMAKE_CURRENT_SOURCE_DIR}/use_case_compilation_info.cpp)
+target_compile_features(example_use_case_compilation_info PRIVATE cxx_std_20)
+target_include_directories(example_use_case_compilation_info PRIVATE ${CMAKE_SOURCE_DIR}/include)
+
 add_executable(example_use_case_config_keys ${CMAKE_CURRENT_SOURCE_DIR}/use_case_config_keys.cpp)
 target_compile_features(example_use_case_config_keys PRIVATE cxx_std_20)
 target_include_directories(example_use_case_config_keys PRIVATE ${CMAKE_SOURCE_DIR}/include)
